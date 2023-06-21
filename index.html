@@ -206,10 +206,10 @@
     // getProps({ firstName: "Jane", married: false }) // should return ["firstName"]
     // getProps({ name: "Bamby", favFood: "flowers" }) // should return ["name", "favFood"]
     function getProps(obj) {
-      let result = []
+      let result = [];
       for(key in obj) //I forgot this part and was confused and tried to use || instead of && without doing !==
       if (key !== 'age' && key !== 'married'){  //don't forget the quotation marks!!
-        result[result.length] = key
+        result[result.length] = key //remember to return
       } return result
     }
 
